@@ -14,18 +14,18 @@ const CONFIG = {
     github: {
       display: true, // Display GitHub projects?
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'manual', // Mode can be: 'automatic' or 'manual'
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
+        sortBy: 'updated', // Sort projects by 'stars' or 'updated'
         limit: 8, // How many projects to display.
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
+          forks: true, // Forked projects will not be displayed if set to true.
           projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
         },
       },
       manual: {
         // Properties for manually specifying projects
-        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: ['benteveo-kiwi/rv-metadata-plugin', 'gabrielamelian/qdbhackthissite', 'LegalCheck/main', 'TopOfTheFlops/server-side', 'TopOfTheFlops/client-side', 'bit-freqs/bitfreqs', ], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
@@ -122,16 +122,10 @@ const CONFIG = {
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Dev Academy',
+      degree: 'Full STack Web Development Bootcamp',
+      from: '2016',
+      to: '2016',
     },
   ],
   publications: [
@@ -153,7 +147,7 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'emerald',
+    defaultTheme: 'retro',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
